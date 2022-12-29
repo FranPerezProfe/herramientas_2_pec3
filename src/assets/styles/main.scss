@@ -10,8 +10,6 @@
  * Import variables
  */
 
-@import "variables";
-
 /**
  * Import npm dependencies
  * see: https://v2.parceljs.org/features/module-resolution/
@@ -31,6 +29,7 @@
 @import "layouts/news-list";
 
 @tailwind utilities;
+@import "https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;0,900;1,400&display=swap";
 
 /**
  * Do NOT include anything else in this file!
