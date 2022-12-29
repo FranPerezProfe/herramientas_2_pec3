@@ -1,0 +1,15 @@
+.card-news {
+  @apply mb-0 bg-white-clear flex flex-col lg:flex-row border border-gray-light rounded-5cus mb-[10px];
+}
+
+.card-news__item {
+  @apply w-11/12 md:w-[48%] xl:w-[32%] text-center mb-[20px] hover:scale-103;
+}
+
+.card-news-item__h3 {
+  @apply rounded-b-10cus bg-blue text-white py-[10px] text-2xl mb-[5px] font-semibold;
+}
+
+.card-news-item__p {
+  @apply p-[6px] md:min-h-[280px] xl:min-h-[340px] min-[1400px]:min-h-[340px] border-2 border-blue-dark rounded-5cus bg-white-clear text-blue text-lg xl:text-xl;
+}

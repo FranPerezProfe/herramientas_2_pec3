@@ -1,0 +1,8 @@
+.li-news {
+  @apply relative pl-[30px] mt-[10px] before:inline-block before:absolute before:left-0 before:top-[5px];
+}
+
+.li-news::before {
+  font: var(--fa-font-solid);
+  content: "\f001";
+}
