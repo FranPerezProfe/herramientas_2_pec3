@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <title>PEC3 - Herramientas HTML y CSS aula II</title>
+    <meta name="description" content="Desarrollo de la PEC1" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss" />
+    <link rel="icon" type="image/x-icon" href="./assets/images/logoSmall.png" />
+  </head>
+
+  <body class="bg-white">
+    <header class="my-container">
+      <nav class="relative px-4 py-4 flex justify-between items-center bg-white">
+        <a class="text-3xl font-bold leading-none" href="index.html">
+          <img
+              src="./assets/images/logo.png"
+              alt="Foto de perfil"
+            />
+        </a>
+        <div class="lg:hidden">
+          <button class="navbar-burger flex items-center p-3">
+            <svg class="block h-4 w-4 fill-current" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+              <title>Mobile menu</title>
+              <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
+            </svg>
+          </button>
+        </div>
+        <ul class="hidden lg:flex lg:flex lg:space-x-6">
+          <li><a class="text-lg text-gray-light hover:text-gray-dark font-bold" href="index.html">Noticias</a></li>
+          <li><a class="text-lg text-gray-light hover:text-gray-dark" href="members.html">Miembros</a></li>
+        </ul>
+        
+      </nav>
+      <div class="navbar-menu relative z-50 hidden">
+        <div class="navbar-backdrop fixed inset-0 bg-white opacity-25"></div>
+        <nav class="fixed top-0 left-0 bottom-0 flex flex-col w-5/6 max-w-sm py-6 px-6 bg-white border-r overflow-y-auto">
+          <div class="flex items-center mb-8">
+            <a class="mr-auto text-3xl font-bold leading-none" href="index.html">
+              <img
+              src="./assets/images/logo.png"
+              alt="Foto de perfil"
+            />
+            </a>
+            <button class="navbar-close">
+              <svg class="h-6 w-6 text-gray cursor-pointer hover:text-gray" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+              </svg>
+            </button>
+          </div>
+          <div>
+            <ul>
+              <li class="mb-1">
+                <a class="block p-4 text-lg text-gray-light hover:text-gray-dark font-bold rounded" href="index.html">Noticias</a>
+              </li>
+              <li class="mb-1">
+                <a class="block p-4 text-lg text-gray-light hover:text-gray-dark rounded" href="members.html">Miembros</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+    </header>
+
+    <main id="news" class="w-full">
+      <img
+        class="md:hidden sm:block w-full mb-[10px]"
+        src="./assets/images/news/news11.jpg"
+        alt="Foto de noticia versión móvil"
+      />
+      <img
+        class="hidden md:block mb-[10px]"
+        src="./assets/images/news/news12.jpg"
+        alt="Foto de noticia versión escritorio y tableta"
+      />
+
+      <div class="my-container md:mx-10cus">
+        <h2 class="text-2xl md:text-3xl font-black text-black-light">
+          Saturno y la Melancolía encuentra una luz en la oscuridad de su primer
+          disco: Cómo escapar de nuestra sombra
+        </h2>
+        <p class="text-gray-justify">
+          <strong>Marcelo Zappoli Saturno y la Melancolía</strong> se formó en
+          plena pandemia y se dieron a conocer a través de un puñado de singles
+          que estaban influenciados por la situación de confinamiento que
+          atravesó al mundo durante el COVID- 19. En ese contexto surgieron
+          canciones como “Encerrado”, “La intuición”, “Out” u “Otra vuelta más
+          al sol”. De hecho, en aquel ahora lejano 2020 se presentaban a sí
+          mismos como “la banda de sonido del desastre”.
+        </p>
+
+        <p class="text-gray-justify">
+          <em
+            >Entre el brit pop y el shoegaze, con letras ancladas en el presente
+            tan difícil de explicar de esos días pandémicos</em
+          >, aquellas canciones urgentes y elegantes fueron la carta de
+          presentación de la banda. Con la lenta salida de la pandemia el grupo
+          comenzó a tocar en vivo y quedó definitivamente conformado por Paul
+          Lewin en voz y guitarra, Sacha Pujó en guitarra y coros, Carolina
+          Gentile en bajo, e Ian Rivello en batería. En este contexto, la banda
+          finalmente nos entrega su álbum debut propiamente dicho, al que
+          bautizaron <strong>Cómo escapar de nuestra sombra</strong> y cuya foto
+          de tapa fue tomada por el gran Marcelo Zappoli, reconocido por
+          retratar a grandes figuras del rock nacional como Federico Moura,
+          Gustavo Cerati o Luca Prodan.
+        </p>
+
+        <blockquote class="special-blockquote">
+          <p class="text-gray-justify">
+            "El título hace referencia a todo lo que nos determina en nuestra
+            historia y biografía, y que es muy difícil escaparle, aparece
+            siempre presente como negación, trauma o nostalgia".
+          </p>
+          <cite class="text-blue"
+            >Lewin en conversación con
+            <a href="https://indiehoy.com/">Indie Hoy</a></cite
+          >
+        </blockquote>
+
+        <p class="text-gray-justify">
+          En lo musical,
+          <em
+            >el disco sorprende con una catarata de referencias a lo mejor de la
+            música británica de los 80 y 90, logrando a la vez un sonido actual
+            y muy anclado en el presente</em
+          >
+          . Algo que quizás sorprenda a quienes conocían los pegadizos singles
+          del grupo es que ya desde el comienzo con “Alunizar” la banda muestra
+          que habrá cambios en las coordenadas sonoras de Saturno y la
+          Melancolía: se trata de una canción de casi 6 minutos, repleta de
+          climas etéreos y un downtempo hipnótico más emparentado con el chill
+          que con el rock garajero que proponían en “Encerrado”. En la escala de
+          Primal Scream, podríamos pensar que están más cerca de “Higher Than
+          the Sun” que de “Rocks”.
+        </p>
+
+        <div class="card-news">
+          <div class="lg:w-7/12">
+            <img src="./assets/images/news/news3.jpg" alt="Foto Dj"/>
+          </div>
+          <div class="lg:w-5/12">
+            <div class="p-4 text-xl lg:text-3xl">
+              <p class="text-gray-justify">
+                El legado de bandas como Joy Division y Los Planetas es
+                resignificado en el repertorio de Saturno y la Melancolía, una
+                agrupación argentina que entrega canciones rock con tendencias
+                post-punk y letras enfocadas en dilemas emocionales. La banda
+                se conformó hace unos años con Paul Lewin (voz y guitarra),
+                Sacha Pujó (guitarra y coros), Carolina Gentile (bajo y coros)
+                y Nicolás Salas (batería).
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <ul class="text-gray-light mb-3">
+          <li class="li-news">
+            <strong>Joy Division</strong> fue una banda de post-punk inglesa,
+            formada en 1976 en Salford, Gran Mánchester. Originalmente llamada
+            Warsaw, la banda estuvo formada por Ian Curtis, Bernard Sumner,n. 1​
+            Peter Hook y Stephen Morris.
+          </li>
+          <li class="li-news">
+            <strong>Los Planetas</strong> es una banda española de indie rock de
+            la ciudad de Granada, que desarrolla su actividad a partir de 1993,
+            y que sigue activa en la actualidad. Los Planetas recogen la
+            influencia de grupos estadounidenses de guitarras como los Mercury
+            Rev de la primera época, o los británicos Spacemen 3 y Joy Division,
+            así como de la música tradicional andaluza (el flamenco).
+          </li>
+        </ul>
+
+        <img
+          src="./assets/images/news/news2.jpg"
+          alt="Foto de noticias concierto en la calle"
+          class="mb-[10px]"
+        />
+
+        <p class="text-gray-justify">
+          Por último, en el centro del disco se destaca una seguidilla de dos
+          canciones que eleva de categoría el disco:
+          <strong>“No me quedo quieto”</strong> , con sus reminiscencias al post
+          punk más luminoso y un trabajo de guitarras que los acerca al sonido
+          actual de bandas europeas como Motorama; seguida de la notable
+          <strong>“Mi sombra no es quien dice ser”</strong> , que retoma la
+          psicodelia hipnótica de “Alunizar” y con una intro de guitarra
+          adictiva.
+        </p>
+
+        <p class="references">
+          La información se ha obtenido de la web
+          <a
+            href="https://indiehoy.com/noticias/saturno-y-la-melancolia-encuentra-una-luz-en-la-oscuridad-de-su-primer-disco-como-escapar-de-nuestra-sombra/"
+          >
+            <strong>indiehoy</strong></a
+          >
+          con fines puramente didácticos.
+        </p>
+      </div>
+    </main>
+    <include src="footer.html"></include>
+    <script type="module" src="./assets/scripts/main.js"></script>
+  </body>
+</html>
