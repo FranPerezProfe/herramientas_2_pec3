@@ -1,0 +1,55 @@
+<header class="my-container">
+  <nav class="px-4 py-4 flex justify-between items-center bg-white">
+    <a class="text-3xl font-bold leading-none" href="index.html">
+      <img src="./assets/images/logo.png" alt="Foto de perfil" />
+    </a>
+    <div class="lg:hidden">
+      <button class="navbar-burger flex items-center p-3">
+        <svg
+          class="block h-4 w-4 fill-current"
+          viewBox="0 0 20 20"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <title>Mobile menu</title>
+          <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
+        </svg>
+      </button>
+    </div>
+
+    <ul class="hidden lg:flex lg:flex lg:space-x-6">
+      <li>
+        <a
+          class="menu-option {{ currentPage === 'index' ? 'font-bold' : '' }}"
+          href="index.html"
+          >Noticias</a
+        >
+      </li>
+      <li>
+        <a
+          class="menu-option {{ currentPage === 'members' ? 'font-bold' : '' }}"
+          href="members.html"
+          >Miembros</a
+        >
+      </li>
+    </ul>
+  </nav>
+
+  <nav class="navbar-menu hidden">
+    <ul>
+      <li class="mb-1">
+        <a
+          class="block p-4 menu-option rounded {{ currentPage === 'index' ? 'font-bold' : '' }}"
+          href="index.html"
+          >Noticias</a
+        >
+      </li>
+      <li class="mb-1">
+        <a
+          class="block p-4 menu-option rounded {{ currentPage === 'members' ? 'font-bold' : '' }}"
+          href="members.html"
+          >Miembros</a
+        >
+      </li>
+    </ul>
+  </nav>
+</header>

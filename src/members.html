@@ -10,7 +10,7 @@
   </head>
 
   <body class="bg-white">
-    <header class="my-container">
+    <!--<header class="my-container">
       <nav class="relative px-4 py-4 flex justify-between items-center bg-white">
         <a class="text-3xl font-bold leading-none" href="index.html">
           <img
@@ -59,21 +59,49 @@
             </ul>
           </div>
         </nav>
-    </header>
+    </header>-->
+    <include src="header.html" locals='{ "currentPage": "members" }'></include>
 
     <main id="members" class="w-full">
-      <h1 class="text-3xl md:text-4xl font-black text-blue text-center mb-[20px]">Miembros de la banda</h1>
+      <h1
+        class="text-3xl md:text-4xl font-black text-blue text-center mb-[20px]"
+      >
+        Miembros de la banda
+      </h1>
 
       <div class="my-container flex flex-wrap justify-evenly items-center">
-
-        <include src="card.html" locals='{ "imgurl": "assets/images/bands/bands1.jpg", "imgalt": "Miembro 1", "name": "Jamie Cook", "desc": "Es el guitarrista principal de Arctic Monkeys, donde además realiza coros. Ganó fama por tocar una Fender Telecaster roja, la cual impactó en un amplificador en un programa de televisión en vivo cuando la banda apareció en “Saturday Night Live”." }'></include>
-        <include src="card.html" locals='{ "imgurl": "assets/images/bands/bands2.jpg", "imgalt": "Miembro 2", "name": "Alex Kapranos", "desc": "Alexander Paul Kapranos nació en Almondsbury, Inglaterra el 20 de marzo de 1972, de padre griego y madre británica. Llega a la música después de pasar por varios trabajos -soldador, cocinero, conductor de furgonetas y profesor de inglés para refugiados y las bandas: Urusei Yatsura, The Amphetameanies, Quinn y The Karelia, entre otras más…" }'></include>
-        <include src="card.html" locals='{ "imgurl": "assets/images/bands/bands3.jpg", "imgalt": "Miembro 3", "name": "Will Champion", "desc": "Champion nació en Southampton, Hampshire, Inglaterra, donde su padre, Timothy Champion, es profesor de arqueología en la Universidad de Southampton. Tener dos padres profesores le llevó a inclinarse por la música. Como los jóvenes, sus influencias musicales incluyen Tom Waits y la tradicional música folk irlandesa. Creció tocando la guitarra, aunque también tenía experiencia en el piano y bajo." }'></include>
-        <include src="card.html" locals='{ "imgurl": "assets/images/bands/bands4.jpg", "imgalt": "Miembro 4", "name": "Guy Berryman", "desc": "Guy Rupert Berryman, (N. el 12 de abril de 1978, en Kirkcaldy, Escocia). A pesar de ser zurdo, toca el bajo en la manera ortodoxa. Berryman nació en Kirkcaldy, Fife, Escocia, pero se trasladó a Kent, Inglaterra a la edad de doce años, asistió a Kent College, una prestigiosa escuela privada. Toca el bajo desde que tenía dieciséis. Creció escuchando música groove y funk." }'></include>
-        <include src="card.html" locals='{ "imgurl": "assets/images/bands/bands5.jpg", "imgalt": "Miembro 5", "name": "Paul Thomson", "desc": "Paul Robert Nester Thomson nació el 15 de septiembre de 1976 en Edimburgo, Escocia. Anteriormente tocaba la batería en una banda llamada Yummy Fur. En Glasgow trabajaba como DJ en el bar The Vic y como modelo, posando desnudo para trabajos y tareas de pintura, en la Escuela de Arte de Glasgow. Antes había trabajado, también, como bailarín de claqué." }'></include>
-        <include src="card.html" locals='{ "imgurl": "assets/images/bands/bands6.jpg", "imgalt": "Miembro 6", "name": "Andy Knowles", "desc": "Andrew John Knowles nació el 30 de Junio de 1982 en Bolton, Inglaterra. Andy es un buen amigo de la banda desde los principios: era el técnico de batería hasta que pasó a formar parte de The Fiery Furnaces y partió de gira con ellos, durante 2004. Al comienzo de 2005, Andy dejó The Fiery Furnaces y volvió con Franz." }'></include>
-        <include src="card.html" locals='{ "imgurl": "assets/images/bands/bands7.jpg", "imgalt": "Miembro 7", "name": "Chris Martin", "desc": "Christopher Anthony John Martin (Devon, Reino Unido, 2 de marzo de 1977), cantante, compositor, guitarrista y pianista, líder de la banda inglesa Coldplay. Su registro de voz es de barítono y es muy frecuente en él el uso del falsetto o falsete. Es conocido además por su activismo en campañas en favor del comercio justo y en contra de la pobreza y el hambre en el mundo." }'></include>
-        <include src="card.html" locals='{ "imgurl": "assets/images/bands/bands8.jpg", "imgalt": "Miembro 8", "name": "Jon Buckland", "desc": "Jonathan Mark Buckland (Nacido el 11 de septiembre de 1977), conocido también como Jon o Jonny Buckland, es el guitarrista de la banda Coldplay. A los 10 años se subió por primera vez a un escenario junto con la banda de rap de su escuela e interpretó temas que el mismo había escrito." }'></include>        
+        <include
+          src="card.html"
+          locals='{ "imgurl": "assets/images/bands/bands1.jpg", "imgalt": "Miembro 1", "name": "Jamie Cook", "desc": "Es el guitarrista principal de Arctic Monkeys, donde además realiza coros. Ganó fama por tocar una Fender Telecaster roja, la cual impactó en un amplificador en un programa de televisión en vivo cuando la banda apareció en “Saturday Night Live”." }'
+        ></include>
+        <include
+          src="card.html"
+          locals='{ "imgurl": "assets/images/bands/bands2.jpg", "imgalt": "Miembro 2", "name": "Alex Kapranos", "desc": "Alexander Paul Kapranos nació en Almondsbury, Inglaterra el 20 de marzo de 1972, de padre griego y madre británica. Llega a la música después de pasar por varios trabajos -soldador, cocinero, conductor de furgonetas y profesor de inglés para refugiados y las bandas: Urusei Yatsura, The Amphetameanies, Quinn y The Karelia, entre otras más…" }'
+        ></include>
+        <include
+          src="card.html"
+          locals='{ "imgurl": "assets/images/bands/bands3.jpg", "imgalt": "Miembro 3", "name": "Will Champion", "desc": "Champion nació en Southampton, Hampshire, Inglaterra, donde su padre, Timothy Champion, es profesor de arqueología en la Universidad de Southampton. Tener dos padres profesores le llevó a inclinarse por la música. Como los jóvenes, sus influencias musicales incluyen Tom Waits y la tradicional música folk irlandesa. Creció tocando la guitarra, aunque también tenía experiencia en el piano y bajo." }'
+        ></include>
+        <include
+          src="card.html"
+          locals='{ "imgurl": "assets/images/bands/bands4.jpg", "imgalt": "Miembro 4", "name": "Guy Berryman", "desc": "Guy Rupert Berryman, (N. el 12 de abril de 1978, en Kirkcaldy, Escocia). A pesar de ser zurdo, toca el bajo en la manera ortodoxa. Berryman nació en Kirkcaldy, Fife, Escocia, pero se trasladó a Kent, Inglaterra a la edad de doce años, asistió a Kent College, una prestigiosa escuela privada. Toca el bajo desde que tenía dieciséis. Creció escuchando música groove y funk." }'
+        ></include>
+        <include
+          src="card.html"
+          locals='{ "imgurl": "assets/images/bands/bands5.jpg", "imgalt": "Miembro 5", "name": "Paul Thomson", "desc": "Paul Robert Nester Thomson nació el 15 de septiembre de 1976 en Edimburgo, Escocia. Anteriormente tocaba la batería en una banda llamada Yummy Fur. En Glasgow trabajaba como DJ en el bar The Vic y como modelo, posando desnudo para trabajos y tareas de pintura, en la Escuela de Arte de Glasgow. Antes había trabajado, también, como bailarín de claqué." }'
+        ></include>
+        <include
+          src="card.html"
+          locals='{ "imgurl": "assets/images/bands/bands6.jpg", "imgalt": "Miembro 6", "name": "Andy Knowles", "desc": "Andrew John Knowles nació el 30 de Junio de 1982 en Bolton, Inglaterra. Andy es un buen amigo de la banda desde los principios: era el técnico de batería hasta que pasó a formar parte de The Fiery Furnaces y partió de gira con ellos, durante 2004. Al comienzo de 2005, Andy dejó The Fiery Furnaces y volvió con Franz." }'
+        ></include>
+        <include
+          src="card.html"
+          locals='{ "imgurl": "assets/images/bands/bands7.jpg", "imgalt": "Miembro 7", "name": "Chris Martin", "desc": "Christopher Anthony John Martin (Devon, Reino Unido, 2 de marzo de 1977), cantante, compositor, guitarrista y pianista, líder de la banda inglesa Coldplay. Su registro de voz es de barítono y es muy frecuente en él el uso del falsetto o falsete. Es conocido además por su activismo en campañas en favor del comercio justo y en contra de la pobreza y el hambre en el mundo." }'
+        ></include>
+        <include
+          src="card.html"
+          locals='{ "imgurl": "assets/images/bands/bands8.jpg", "imgalt": "Miembro 8", "name": "Jon Buckland", "desc": "Jonathan Mark Buckland (Nacido el 11 de septiembre de 1977), conocido también como Jon o Jonny Buckland, es el guitarrista de la banda Coldplay. A los 10 años se subió por primera vez a un escenario junto con la banda de rap de su escuela e interpretó temas que el mismo había escrito." }'
+        ></include>
       </div>
       <p class="my-container references">
         Se ha obtenido información de los integrantes de varios grupos de música
